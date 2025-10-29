@@ -45,8 +45,6 @@ This Python script uses **OpenCV** and **multi-threaded webcam streaming** to de
 When the script runs, it opens a live video feed window called **“Detection”**.
 Detected obstacles will be outlined in color, with guide lines overlaid for spatial awareness.
 
-*(Add a screenshot here once you have one, e.g. `![Detection Example](example.png)`)*
-
 ---
 
 ## ⚙️ Adjustable Parameters

@@ -1,7 +1,3 @@
-Here’s a well-structured **README.md** file you can use for your GitHub repository:
-
----
-
 # 🟥🟩 Green and Red Rectangular Obstacles Detection
 
 **Real-time obstacle detection system for green and red rectangular objects** — designed for use in the **WRO Future Engineers 2023 obstacle challenge** or similar robotics competitions.
@@ -53,37 +49,6 @@ Detected obstacles will be outlined in color, with guide lines overlaid for spat
 
 ---
 
-## 🛠️ Requirements
-
-* Python 3.8 or later
-* OpenCV
-* NumPy
-
-Install dependencies with:
-
-```bash
-pip install opencv-python numpy
-```
-
----
-
-## ▶️ Usage
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/yourusername/obstacle-detection-wro.git
-   cd obstacle-detection-wro
-   ```
-2. Run the script:
-
-   ```bash
-   python detect_obstacles.py
-   ```
-3. Press **`q`** to quit the live feed.
-
----
-
 ## ⚙️ Adjustable Parameters
 
 You can tweak the HSV color ranges or rectangle filtering for your environment or lighting conditions:
@@ -107,23 +72,8 @@ And the rectangularity thresholds:
 is_rectangle(cnt, ratio, Area)
 # Example usage:
 # - Red rectangles: ratio > 0.8
-# - Green rectangles: ratio > 0.55
+# - Green rectangles: ratio > 0.8
 ```
-
----
-
-## 🧠 Code Overview
-
-**Main components:**
-
-* `WebcamStream` class
-  Handles threaded webcam capture to avoid frame drops.
-* `is_rectangle()` function
-  Determines if a contour is approximately rectangular based on its area-to-bounding-box ratio.
-* Main loop
-  Processes each frame, applies color masks, finds contours, validates rectangles, and displays results.
-
----
 
 ## 🧭 Applications
 
@@ -131,21 +81,3 @@ is_rectangle(cnt, ratio, Area)
 * Robot navigation and vision testing
 * Color-based object detection experiments
 * Embedded robotics camera systems
-
----
-
-## 🧑‍💻 Author
-
-**Your Name**
-📧 [your.email@example.com](mailto:your.email@example.com)
-🌐 [GitHub Profile](https://github.com/yourusername)
-
----
-
-## 🪪 License
-
-This project is licensed under the **MIT License** — feel free to use and modify it for your robotics projects.
-
----
-
-Would you like me to make the README more **competition-oriented** (e.g. mentioning robot vision pipeline integration for WRO) or keep it as a **general OpenCV project**?
